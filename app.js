@@ -64,7 +64,7 @@ let verifyTry = () => {
             lives--;
 
             if(lives < 1){
-                assignTextToElement(`Rayos, haz perdido todas tus vidas!`,'p');
+                assignTextToElement(`Rayos, haz perdido todas tus vidas! El numero secreto era: ${secretNumber}`,'p');
                 document.getElementById('intentar').setAttribute('disabled', 'true');
                 document.getElementById('reiniciar').removeAttribute('disabled');
             }else{
