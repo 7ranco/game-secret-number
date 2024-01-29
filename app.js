@@ -55,7 +55,7 @@ initialConditions();
 let verifyTry = () => {
     let userNumber = parseInt(document.getElementById('input').value);
     // console.log(secretNumber);    
-    if(userNumber < 10 && userNumber > 0){
+    if(userNumber <= 10 && userNumber > 0){
         if(secretNumber === userNumber){
             assignTextToElement(`Acertaste el número, lo lograste en ${ attempts  } ${ attempts == 1 ? 'intento' : 'intentos' } `, 'p');
             document.getElementById('reiniciar').removeAttribute('disabled');
